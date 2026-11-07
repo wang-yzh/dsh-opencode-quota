@@ -1,0 +1,55 @@
+{
+  "name": "dsh-opencode-quota",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "OpenCode Go 用量状态条：在 DeepSeek Harness 输入框下方的官方状态行显示 5 小时 / 每周 / 每月 额度百分比，点击展开详情。",
+  "homepage": "https://github.com/wang-yzh/dsh-opencode-quota#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wang-yzh/dsh-opencode-quota.git"
+  },
+  "bugs": {
+    "url": "https://github.com/wang-yzh/dsh-opencode-quota/issues"
+  },
+  "author": "wang-yzh",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "cordis",
+    "opencode",
+    "opencode-go",
+    "quota",
+    "usage",
+    "web-ui"
+  ],
+  "license": "MIT",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": { "patch": "./cordis.patch.yml" },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    },
+    "compatibility": {
+      "dshReleases": {
+        "0.2.2-rc.1": "compatible"
+      }
+    }
+  }
+}
