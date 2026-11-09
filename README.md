@@ -1,4 +1,4 @@
-# dsh-opencode-quota
+# dsh-opencode-quota-full（全窗口药丸版）
 
 > OpenCode Go 订阅额度状态条：在 DeepSeek Harness Web GUI 输入框下方的官方状态行里，显示 **5 小时 / 每周 / 每月** 的已用百分比，点击展开详情。
 
@@ -54,9 +54,18 @@ Harness Web 浏览器
 从本地目录安装：
 
 ```sh
-dsh plugin --profile desktop add /path/to/dsh-opencode-quota
-dsh plugin --profile web add /path/to/dsh-opencode-quota
+dsh plugin --profile desktop add /path/to/dsh-opencode-quota-full
+dsh plugin --profile web add /path/to/dsh-opencode-quota-full
 ```
+
+从 npm 安装：
+
+```sh
+dsh plugin --profile desktop add dsh-opencode-quota-full
+dsh plugin --profile web add dsh-opencode-quota-full
+```
+
+npm 包地址：<https://www.npmjs.com/package/dsh-opencode-quota-full>
 
 从 GitHub 安装：
 
@@ -108,7 +117,7 @@ OPENCODE_GO_API_KEY: oc_sk_...
 ## 目录结构
 
 ```text
-dsh-opencode-quota/
+dsh-opencode-quota-full/
 ├── index.js            # Host 半：凭据解析 + 官方用量查询 + 同源路由
 ├── client.js           # Client 半：底栏药丸 + 展开浮层（React, 无 JSX）
 ├── cordis.patch.yml    # bundle patch：把 Host 行插入 profile 组合
@@ -131,8 +140,8 @@ node --check client.js
 修改后重装 bundle（或重启 Harness）让页面加载新代码：
 
 ```sh
-dsh plugin --profile desktop remove dsh-opencode-quota
-dsh plugin --profile desktop add /path/to/dsh-opencode-quota
+dsh plugin --profile desktop remove dsh-opencode-quota-full
+dsh plugin --profile desktop add /path/to/dsh-opencode-quota-full
 ```
 
 ## 已知限制
