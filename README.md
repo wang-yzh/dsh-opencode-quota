@@ -58,15 +58,6 @@ dsh plugin --profile desktop add /path/to/dsh-opencode-quota-full
 dsh plugin --profile web add /path/to/dsh-opencode-quota-full
 ```
 
-从 npm 安装：
-
-```sh
-dsh plugin --profile desktop add dsh-opencode-quota-full
-dsh plugin --profile web add dsh-opencode-quota-full
-```
-
-npm 包地址：<https://www.npmjs.com/package/dsh-opencode-quota-full>
-
 从 GitHub 安装：
 
 ```sh

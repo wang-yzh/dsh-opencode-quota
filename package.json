@@ -1,6 +1,7 @@
 {
   "name": "dsh-opencode-quota-full",
   "version": "1.0.0",
+  "private": true,
   "type": "module",
   "description": "OpenCode Go 用量状态条（全窗口版）：在 DeepSeek Harness 输入框下方的官方状态行显示 5 小时 / 每周 / 每月 额度百分比，点击展开详情。",
   "homepage": "https://github.com/wang-yzh/dsh-opencode-quota#readme",
